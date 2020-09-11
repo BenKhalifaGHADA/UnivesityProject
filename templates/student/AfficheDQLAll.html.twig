@@ -1,0 +1,24 @@
+<h1>show all students using DQL</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Date of birth</th>
+        <th>Actions</th>
+    </tr>
+    {% for student in students %}
+        <tr>
+            <td>{{ student.id }}</td>
+            <td>{{ student.firstname }}</td>
+            <td>{{ student.lastname }}</td>
+            <td> {{ student.dateofbirth|date('Y-m-d') }} </td>
+            <td><a href="{{ path('delete_student', {'id':  student.Id  }) }}">Delete</a></td>
+
+        </tr>
+    {% endfor %}
+
+
+</table>
+<br/>
+Le nombre des étudiants est : {{ numberStudent }}

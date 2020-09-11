@@ -1,0 +1,17 @@
+<h1>show all students using DQL</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Date of birth</th>
+    </tr>
+     <tr>
+            <td>{{ students.id }}</td>
+            <td>{{ students.firstname }}</td>
+            <td>{{ students.lastname }}</td>
+            <td> {{ students.dateofbirth|date('Y-m-d') }} </td>
+
+      </tr>
+</table>
+

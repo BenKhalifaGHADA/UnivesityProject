@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Recherche</title>
+</head>
+<body>
+<h1>Recherche DQL un étudiant par son nom </h1>
+{{ form(Form) }}
+<h2>Liste des étudiants</h2>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Date of birth</th>
+    </tr>
+    {% for student in students %}
+        <tr>
+            <td>{{ student.id }}</td>
+            <td>{{ student.firstname }}</td>
+            <td>{{ student.lastname }}</td>
+            <td> {{ student.dateofbirth|date('Y-m-d') }} </td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

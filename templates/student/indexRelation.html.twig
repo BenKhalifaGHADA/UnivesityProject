@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Add a student</title>
+    <style>
+        #simpleform {
+            width:600px;
+            border:2px solid grey;
+            padding:14px;
+        }
+        #simpleform select {
+            margin: 0 0 10px 10px;
+        }
+        #simpleform input {
+            border:1px solid grey;
+            font-family:verdana;
+            font-size:14px;
+            color:light blue;
+            height:24px;
+            width:50px;
+            margin: 0 0 10px 10px;
+        }
+
+
+        #simpleform button {
+            clear:both;
+            margin-left:250px;
+            background: grey;
+            color:#FFFFFF;
+            border:solid 1px #666666;
+            font-size:16px;
+        }
+    </style>
+</head>
+<body>
+       <div id="simpleform">
+       <h3>add a student </h3>
+           {{ form_start(Form) }}
+           {{ form_widget(Form) }}
+           {{ form_end(Form) }}
+       </div>
+</body>
+</html>

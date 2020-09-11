@@ -1,0 +1,19 @@
+<h1>show all clubs using Query Builder</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>name</th>
+           </tr>
+
+    {% for club in clubs %}
+        <tr>
+            <td>{{ club.id }}</td>
+            <td>{{ club.name }}</td>
+
+
+        </tr>
+    {% endfor %}
+
+
+</table>
+<br/>

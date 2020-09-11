@@ -1,0 +1,13 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+QueryBuilder_Select_without_paramater:
+  path: /QueryBuilderSelect
+  controller: App\Controller\StudentController::showAllStudent
+
+
+
+
+
+
